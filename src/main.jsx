@@ -3,11 +3,13 @@ import * as ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import SimpleForm from "./components/SimpleForm";
+import StateFulForm from "./components/StateFulForm";
+import App from "./App";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <SimpleForm/>
+    element: <App />,
   },
 ]);
 
