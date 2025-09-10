@@ -1,13 +1,20 @@
 import React, { useState } from "react";
 
 const StateFulForm = () => {
+  const [name, setName] = useState(null);
   const [email, setEmail] = useState(null);
   const [password, setPassword] = useState(null);
 
   const handleForm = (e) => {
     e.preventDefault();
+    console.log("Name: ", name);
     console.log("Email: ", email);
     console.log("Password: ", password);
+  };
+
+  // name
+  const handleNameChange = (e) => {
+    setName(e.target.value);
   };
 
   // email
@@ -25,7 +32,8 @@ const StateFulForm = () => {
     <div>
       <h2>State ful Form</h2>
       <form onSubmit={handleForm}>
-        <input type="text" placeholder="Name" /> <br />
+        <input onChange={handleNameChange} type="text" placeholder="Name" />{" "}
+        <br />
         <input
           onChange={handleEmailChange}
           type="email"

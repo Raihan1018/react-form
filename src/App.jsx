@@ -1,10 +1,12 @@
 import React from "react";
 import StateFulForm from "./components/StateFulForm";
+import RefForm from "./components/RefForm";
 
 const App = () => {
   return (
     <div>
-      <StateFulForm />
+      {/* <StateFulForm /> */}
+      <RefForm/>
     </div>
   );
 };
