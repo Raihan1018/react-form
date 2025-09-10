@@ -1,9 +1,6 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef } from "react";
 
 const RefForm = () => {
-  // const [name, setName] = useState(null);
-  // const [email, setEmail] = useState(null);
-  // const [password, setPassword] = useState(null);
 
   const nameRef = useRef(null);
   const emailRef = useRef(null);
